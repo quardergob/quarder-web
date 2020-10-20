@@ -1,0 +1,116 @@
+/*
+    ---------------------
+    - Table of Contents -
+    1.0 - Box sizing rules
+    2.0 - Remove default padding
+    3.0 - Remove default margin
+    4.0 - Set core body defaults
+    5.0 - Remove list styles on ul, ol elements with a class attribute
+    6.0 - A elements that don't have a class get default styles
+    7.0 - Make images easier to work with
+    8.0 - Natural flow and rhythm in articles by default
+    9.0 - Inherit fonts for inputs and buttons
+    10.0 - Remove all animations and transitions for people that prefer not to see them
+    11.0 - Remove style of links
+    ---------------------
+*/
+
+/* 1.0 - Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2.0 - Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* 3.0 - Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* 4.0 - Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* 5.0 - Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* 6.0 - A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* 7.0 - Make images easier to work with */
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+
+/* 8.0 - Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* 9.0 - Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* 10.0 - Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* 11.0 - Remove style of links */
+a {
+  color: #000;
+  text-decoration: none;
+}
