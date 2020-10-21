@@ -7,6 +7,7 @@
 
 .wrap {
   margin: 0 auto;
+  max-width: 500px;
   padding: 0 30px;
 }
 
@@ -22,6 +23,12 @@ body {
     section.app {
       .wrap {
         height: calc(100vh - 280px) !important;
+
+        .container {
+          p {
+            transform: translateY(50px);
+          }
+        }
       }
     }
   }
