@@ -1,0 +1,28 @@
+/*
+    ---------------------
+    - Table of Contents -
+    1.0 - General
+    ---------------------
+*/
+
+.wrap {
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+body {
+  background-color: $red;
+  color: $white;
+  font-family: $poppins;
+
+  &.loading {
+    background-color: $white;
+    color: $black;
+
+    section.app {
+      .wrap {
+        height: calc(100vh - 280px) !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+/*
+    ---------------------
+    - Table of Contents -
+    1.0 - App
+    ---------------------
+*/
+
+section.app {
+  padding: 50px 0;
+
+  .wrap {
+    height: calc(100vh - 335px);
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-between;
+
+      p {
+        font-size: 25px;
+        font-weight: $poppins-semiBold;
+        line-height: 35px;
+        text-align: center;
+      }
+
+      label {
+        margin: auto;
+
+        input {
+          background: $red_hover;
+          border-radius: 10px;
+          color: $white;
+          font-size: 25px;
+          font-weight: 500;
+          height: 60px;
+          line-height: 50px;
+          text-align: center;
+          width: 295px;
+
+          &::placeholder {
+            color: $white;
+          }
+        }
+      }
+
+      a {
+        background: $red_hover;
+        border-radius: 52px;
+        box-shadow: 0px 0px 20px rgba(255, 65, 65, 0.35);
+        color: $white;
+        font-size: 20px;
+        font-weight: $poppins-semiBold;
+        line-height: 30px;
+        padding: 15px 0;
+        text-align: center;
+
+        &.loading {
+          background: $red;
+        }
+      }
+
+      span {
+        align-items: center;
+        background: $red_count;
+        border-radius: 50%;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15), inset 0px 0px 15px rgba(255, 65, 65, 0.3);
+        display: flex;
+        height: 221px;
+        justify-content: center;
+        margin: auto;
+        width: 221px;
+
+        img {
+          display: block;
+        }
+      }
+    }
+  }
+}

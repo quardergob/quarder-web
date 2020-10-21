@@ -99,6 +99,10 @@ fieldset {
   padding: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* 10.0 - Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   * {
@@ -112,5 +116,6 @@ fieldset {
 /* 11.0 - Remove style of links */
 a {
   color: #000;
+  display: block;
   text-decoration: none;
 }
